@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class=active href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <form id="myform" name="contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqyygpn" method="post">
+      <fieldset>
+        <label for="name">First Name</label>
+        <input type="text" name="name" id="name" required="">
+      </fieldset>
+      <fieldset>
+        <label for="last">Last Name</label>
+        <input type="text" name="last" id="last">
+      </fieldset>
+      <fieldset>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" required="">
+      </fieldset>
+      <fieldset>
+        <label for="availabilty">Availablty Time</label>
+        <select name="availabilty" id="availabilty" required="">
+          <option value="" selected="" disabled="">Select</option>
+          <option value="Morning">Morning</option>
+          <option value="Noon">Noon</option>
+          <option value="Afternoon">Afternoon </option>
+          <option value="Evening">Evening</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="comment">Further Comments</label>
+        <textarea class="commentbox" rows="5" name="comment" id="comment" required="">
+        </textarea>
+        <input type="hidden" name="_subject" id="email_subject" value="Contact Form Submission">
+      </fieldset>
+      <fieldset>
+        <button disabled="" class="formbutton" id="submit" type="submit">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </main>
+  <footer>
+    <ul>
+      <li><a id="footersent"></a></li>
+      <li>|</li>
+      <li><a href="index.html">Home</a></li>
+      <li>|</li>
+      <li><a href="about.html">About</a></li>
+      <li>|</li>
+      <li><a href="contact.html">Contact</a></li>
+      <li>|</li>
+    </ul>
+  </footer>
+  <script src="js/contact.js"></script>
+</body>
+
+</html>

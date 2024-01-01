@@ -1,0 +1,227 @@
+body {
+  background-color: lightgrey;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 0.95;
+}
+
+h1 {
+  margin: 0 0 30 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 14px;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 0;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav li a:hover {
+  background-color: black;
+}
+
+.active {
+  background-color: black;
+}
+
+.card {
+  text-align: center;
+  background-color: darkgrey;
+  border-radius: 10px;
+  margin: 4rem auto;
+  padding: 10px 0;
+  width: 200px;
+  height: 13.1rem;
+}
+
+@keyframes hoveranim {
+  from {
+    height: 13.1rem;
+  }
+
+  to {
+    height: 18rem;
+  }
+}
+
+.card:hover {
+  animation-name: hoveranim;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.profile-image img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.profile-name {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.sites {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sites li {
+  display: inline-block;
+  margin: 5px;
+  padding: 0;
+}
+
+.sites li a {
+  color: black;
+}
+
+.myself-and-me {
+  background-color: lightgray;
+  margin: 4rem 0 0 0;
+  padding: 0;
+}
+
+.myself-and-me li {
+  list-style-type: none;
+  display: inline-block;
+  width: 31%;
+  text-align: center;
+  vertical-align: top;
+  margin: 0 10px;
+  padding: 0;
+}
+
+#map {
+  display: block;
+  border-radius: 10px;
+}
+
+.btns {
+  margin: 1rem 0;
+}
+
+.next {
+  border-radius: 10px;
+  border: solid darkgrey;
+}
+
+.prev {
+  border-radius: 10px;
+  border: solid darkgrey;
+}
+
+form {
+  width: 300px;
+  margin: 4rem 0;
+  padding: 0;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  border-radius: 10px;
+  border: solid darkgrey;
+  font-size: 14px;
+}
+
+select {
+  width: 100%;
+  border-radius: 10px;
+  border: solid darkgrey;
+  font-size: 14px;
+}
+
+.formbutton {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  border-radius: 10px;
+  border: solid darkgrey;
+  font-size: 14px;
+}
+
+.commentbox {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  border-radius: 10px;
+  border: solid darkgrey;
+  font-size: 14px;
+}
+
+footer ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+
+}
+
+footer li a {
+  font-size: 10px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
